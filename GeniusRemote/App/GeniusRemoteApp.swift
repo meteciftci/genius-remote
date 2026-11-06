@@ -15,6 +15,8 @@ struct GeniusRemoteApp: App {
 
     init() {
         LaunchFiles.cleanUp()
+        // Sparkle only starts its scheduled checks once the updater exists.
+        _ = AppUpdater.shared
         container = Self.makeContainer()
         SealedPasswordStore.shared = SealedPasswordStore(container: container)
         let launcher = ConnectionLauncher()

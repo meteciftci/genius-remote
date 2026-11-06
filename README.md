@@ -55,16 +55,6 @@ A simple SSH, RDP and serial (COM) connection manager for macOS. Save your conne
 
 ## Installation
 
-### Homebrew
-
-```bash
-brew install meteciftci/tap/geniusremote
-```
-
-Update with `brew upgrade geniusremote`. Because the app isn't notarized by Apple, the cask removes the quarantine flag after installing, so macOS doesn't block it on launch. Installing from this tap is how you agree to that.
-
-`brew uninstall --zap geniusremote` also removes connections, settings and logs.
-
 ### Prebuilt release
 
 1. Download the latest `GeniusRemote-x.y.z.zip` from the [Releases](https://github.com/meteciftci/genius-remote/releases) page, unzip it, and move `GeniusRemote.app` to your **Applications** folder.
@@ -75,7 +65,7 @@ Update with `brew upgrade geniusremote`. Because the app isn't notarized by Appl
      xattr -dr com.apple.quarantine /Applications/GeniusRemote.app
      ```
 
-Prebuilt releases are ad-hoc signed, so macOS asks for Accessibility access again after each update.
+The app checks for new versions itself (Settings > General) and installs them when you agree. Prebuilt releases are ad-hoc signed, so macOS asks for Accessibility access again after each update.
 
 ### Building from source
 

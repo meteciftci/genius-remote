@@ -55,16 +55,6 @@ macOS için sade bir SSH, RDP ve seri (COM) bağlantı yöneticisi. Bağlantıla
 
 ## Kurulum
 
-### Homebrew
-
-```bash
-brew install meteciftci/tap/geniusremote
-```
-
-Güncellemek için `brew upgrade geniusremote`. Uygulama Apple tarafından onaylanmadığı için cask, kurulumdan sonra karantina işaretini kaldırır; bu sayede macOS açılışta engellemez. Bu tap'ten kurarak buna onay vermiş olursunuz.
-
-`brew uninstall --zap geniusremote` uygulamayla birlikte bağlantıları, ayarları ve günlükleri de siler.
-
 ### Hazır sürüm
 
 1. [Releases](https://github.com/meteciftci/genius-remote/releases) sayfasından son `GeniusRemote-x.y.z.zip` dosyasını indirin, açın ve `GeniusRemote.app`'i **Uygulamalar** klasörüne taşıyın.
@@ -75,7 +65,7 @@ Güncellemek için `brew upgrade geniusremote`. Uygulama Apple tarafından onayl
      xattr -dr com.apple.quarantine /Applications/GeniusRemote.app
      ```
 
-Hazır sürüm yerel imzalıdır. Bu yüzden her güncellemeden sonra macOS, Erişilebilirlik iznini bir kez daha sorar.
+Uygulama yeni sürümleri kendisi denetler (Ayarlar > Genel) ve onayınızla kurar. Hazır sürüm yerel imzalıdır. Bu yüzden her güncellemeden sonra macOS, Erişilebilirlik iznini bir kez daha sorar.
 
 ### Kaynak koddan derleme
 

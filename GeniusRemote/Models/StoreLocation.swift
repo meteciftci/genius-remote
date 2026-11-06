@@ -3,7 +3,7 @@ import SQLite3
 
 /// Where the connection store lives. Before 1.3.2 it was SwiftData's default,
 /// `~/Library/Application Support/default.store`, a name any app can use and that
-/// `brew uninstall --zap` couldn't remove. It now lives in Genius Remote's own folder.
+/// an uninstaller couldn't remove. It now lives in Genius Remote's own folder.
 nonisolated enum StoreLocation {
     static var url: URL {
         URL.applicationSupportDirectory.appending(path: "GeniusRemote/GeniusRemote.store")

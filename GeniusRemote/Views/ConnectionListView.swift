@@ -16,6 +16,7 @@ struct ConnectionListView: View {
     var onImportRDPFiles: () -> Void
 
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.openWindow) private var openWindow
     @Environment(ReachabilityMonitor.self) private var reachability
     @Query(sort: \Connection.name, order: .forward) private var allConnections: [Connection]
     @State private var selection = Set<UUID>()
@@ -81,6 +82,14 @@ struct ConnectionListView: View {
                         Label("Backup", systemImage: "archivebox")
                     }
                     .help("Import or export connections")
+                }
+                ToolbarItem(placement: .primaryAction) {
+                    Button {
+                        openWindow(id: InstantRDPWindow.id)
+                    } label: {
+                        Label("Instant RDP", systemImage: "bolt.fill")
+                    }
+                    .help("Instant RDP: connect without saving (⌥⌘N)")
                 }
                 ToolbarItemGroup(placement: .primaryAction) {
                     Button {

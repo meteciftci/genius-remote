@@ -1437,6 +1437,17 @@
         }
       }
     },
+    "Instant RDP: connect without saving (⌥⌘N)": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anlık RDP: kaydetmeden bağlan (⌥⌘N)"
+          }
+        }
+      }
+    },
     "Instant RDP…": {
       "extractionState": "manual",
       "localizations": {

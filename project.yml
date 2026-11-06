@@ -10,6 +10,9 @@ packages:
   KeyboardShortcuts:
     url: https://github.com/sindresorhus/KeyboardShortcuts
     exactVersion: 3.1.0
+  Sparkle:
+    url: https://github.com/sparkle-project/Sparkle
+    exactVersion: 2.10.1
 
 # Signing lives in Config/Signing.xcconfig (+ optional, untracked Config/Local.xcconfig).
 configFiles:
@@ -33,6 +36,7 @@ targets:
       - path: GeniusRemote
     dependencies:
       - package: KeyboardShortcuts
+      - package: Sparkle
     info:
       path: GeniusRemote/Info.plist
       properties:
@@ -40,6 +44,9 @@ targets:
         NSAppleEventsUsageDescription: Genius Remote opens SSH connections in a new iTerm2 window.
         CFBundleShortVersionString: "1.0.0"
         CFBundleVersion: "1"
+        SUFeedURL: https://github.com/meteciftci/genius-remote/releases/latest/download/appcast.xml
+        SUPublicEDKey: 3GgwiMmyBS2nYOtpsOgql2b2pCAce/JR5sDb7oqdxWY=
+        SUEnableAutomaticChecks: true
         LSApplicationCategoryType: public.app-category.developer-tools
         NSHumanReadableCopyright: "© 2026 Mete Çiftçi"
         CFBundleLocalizations: [en, tr]
@@ -62,6 +69,9 @@ targets:
       properties:
         # Lets the hardened runtime send Apple Events, used to open SSH sessions in iTerm2.
         com.apple.security.automation.apple-events: true
+        # Sparkle is signed by its own build, and the app is ad-hoc signed, so macOS would
+        # refuse to load the framework under library validation.
+        com.apple.security.cs.disable-library-validation: true
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.meteciftci.GeniusRemote

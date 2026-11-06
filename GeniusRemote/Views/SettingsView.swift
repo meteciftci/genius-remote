@@ -101,6 +101,13 @@ struct SettingsView: View {
                         Link("Release Notes", destination: Bundle.releaseNotesURL)
                     }
                 }
+                Toggle("Check for updates automatically", isOn: Binding(
+                    get: { AppUpdater.shared.automaticallyChecks },
+                    set: { AppUpdater.shared.automaticallyChecks = $0 }
+                ))
+                LabeledContent("Updates") {
+                    Button("Check Now") { AppUpdater.shared.checkForUpdates() }
+                }
             }
         }
         .formStyle(.grouped)

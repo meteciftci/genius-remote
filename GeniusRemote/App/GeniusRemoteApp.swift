@@ -55,6 +55,9 @@ struct GeniusRemoteApp: App {
         .modelContainer(container)
         .windowToolbarStyle(.unified)
         .commands {
+            CommandGroup(after: .appInfo) {
+                Button("Check for Updates…") { AppUpdater.shared.checkForUpdates() }
+            }
             CommandGroup(replacing: .newItem) {
                 Button("New Connection") { actions?.newConnection() }
                     .keyboardShortcut("n")

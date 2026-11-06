@@ -57,6 +57,12 @@
 	<string>Genius Remote opens SSH connections in a new iTerm2 window.</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>© 2026 Mete Çiftçi</string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUFeedURL</key>
+	<string>https://github.com/meteciftci/genius-remote/releases/latest/download/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>3GgwiMmyBS2nYOtpsOgql2b2pCAce/JR5sDb7oqdxWY=</string>
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>

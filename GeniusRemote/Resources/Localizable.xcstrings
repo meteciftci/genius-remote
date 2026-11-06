@@ -451,6 +451,39 @@
         }
       }
     },
+    "Check for Updates…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncellemeleri Denetle…"
+          }
+        }
+      }
+    },
+    "Check for updates automatically": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncellemeleri otomatik denetle"
+          }
+        }
+      }
+    },
+    "Check Now": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şimdi Denetle"
+          }
+        }
+      }
+    },
     "Checking…": {
       "extractionState": "manual",
       "localizations": {
@@ -2940,6 +2973,17 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ulaşılamıyor: %@"
+          }
+        }
+      }
+    },
+    "Updates": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncellemeler"
           }
         }
       }

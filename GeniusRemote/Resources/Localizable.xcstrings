@@ -1,0 +1,3059 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "\"Default\" follows Settings. All screens needs full screen; a shared folder works with FreeRDP only.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Varsayılan” Ayarlar’daki değeri kullanır. Tüm ekranlar yalnızca tam ekranda kullanılır; paylaşılan klasör yalnızca FreeRDP’de çalışır."
+          }
+        }
+      }
+    },
+    "\"File Transfer\" in an SSH connection's menu opens its files here. Automatic picks an installed file transfer app, or sftp in the terminal if there is none. Apps get the server and user name; the saved password is copied to the clipboard for 30 seconds.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH bağlantısının menüsündeki “Dosya Aktarımı” dosyaları burada açar. Otomatik, kurulu bir dosya aktarım uygulamasını seçer; yoksa terminalde sftp açılır. Uygulamaya sunucu ve kullanıcı adı gider; kayıtlı şifre 30 saniyeliğine panoya kopyalanır."
+          }
+        }
+      }
+    },
+    "%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        }
+      }
+    },
+    "%@ Copy": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ Kopya"
+          }
+        }
+      }
+    },
+    "%@ can't be opened: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ açılamadı: %@"
+          }
+        }
+      }
+    },
+    "%@ could not be found": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ bulunamadı"
+          }
+        }
+      }
+    },
+    "%@ doesn't support %@ baud.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, %@ baud hızını desteklemiyor."
+          }
+        }
+      }
+    },
+    "%@ doesn't support these settings.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ bu ayarları desteklemiyor."
+          }
+        }
+      }
+    },
+    "%@ is in use by another app.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ başka bir uygulama tarafından kullanılıyor."
+          }
+        }
+      }
+    },
+    "%@ is not installed": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ kurulu değil"
+          }
+        }
+      }
+    },
+    "%@ is required": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ gerekli"
+          }
+        }
+      }
+    },
+    "%@ isn't connected.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ bağlı değil."
+          }
+        }
+      }
+    },
+    "%@ was disconnected.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ bağlantısı kesildi."
+          }
+        }
+      }
+    },
+    "%lld added, %lld skipped (already present), %lld new groups.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld eklendi, %lld atlandı (zaten mevcut), %lld yeni grup."
+          }
+        }
+      }
+    },
+    "%lld connections": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld connection"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld connections"
+                }
+              }
+            }
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld bağlantı"
+          }
+        }
+      }
+    },
+    "%lld connections and all groups will be saved to a .geniusremote file.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld connection and all groups will be saved to a .geniusremote file."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld connections and all groups will be saved to a .geniusremote file."
+                }
+              }
+            }
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld bağlantı ve tüm gruplar bir .geniusremote dosyasına kaydedilecek."
+          }
+        }
+      }
+    },
+    "%lld connections imported": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld connection imported"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld connections imported"
+                }
+              }
+            }
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld bağlantı içe aktarıldı"
+          }
+        }
+      }
+    },
+    "%lld connections use it. They keep its user name, but their password has to be entered again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu profili %lld bağlantı kullanıyor. Bağlantılar kullanıcı adını korur, ancak şifrelerinin yeniden girilmesi gerekir."
+          }
+        }
+      }
+    },
+    "192.168.1.10 or server.example.com": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "192.168.1.10 veya sunucu.ornek.com"
+          }
+        }
+      }
+    },
+    "A profile keeps one user name and password, such as a domain account, for several connections. Change the password here once and every connection uses the new one.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profil, örneğin bir domain hesabı gibi tek bir kullanıcı adı ve şifreyi birden fazla bağlantı için saklar. Şifreyi burada bir kez değiştirin, tüm bağlantılar yenisini kullanır."
+          }
+        }
+      }
+    },
+    "Accessibility access": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erişilebilirlik izni"
+          }
+        }
+      }
+    },
+    "Add Connection": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlantı Ekle"
+          }
+        }
+      }
+    },
+    "Add Profile": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profil Ekle"
+          }
+        }
+      }
+    },
+    "Add to Favorites": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Favorilere Ekle"
+          }
+        }
+      }
+    },
+    "Add to group": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gruba ekle"
+          }
+        }
+      }
+    },
+    "Add your first SSH or RDP connection.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlk SSH veya RDP bağlantını ekle."
+          }
+        }
+      }
+    },
+    "All Connections": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm Bağlantılar"
+          }
+        }
+      }
+    },
+    "Allow Genius Remote to control %@ in System Settings > Privacy & Security > Automation.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sistem Ayarları > Gizlilik ve Güvenlik > Otomasyon’da Genius Remote’un %@ uygulamasını denetlemesine izin verin."
+          }
+        }
+      }
+    },
+    "Allowed": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İzin verildi"
+          }
+        }
+      }
+    },
+    "Already exists": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaten var"
+          }
+        }
+      }
+    },
+    "At least 8 characters": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En az 8 karakter"
+          }
+        }
+      }
+    },
+    "Authentication": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kimlik Doğrulama"
+          }
+        }
+      }
+    },
+    "Automatic": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otomatik"
+          }
+        }
+      }
+    },
+    "Backup": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yedekleme"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vazgeç"
+          }
+        }
+      }
+    },
+    "Change resolution": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çözünürlüğü değiştir"
+          }
+        }
+      }
+    },
+    "Checking…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrol ediliyor…"
+          }
+        }
+      }
+    },
+    "Choose SSH Key": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH Anahtarı Seç"
+          }
+        }
+      }
+    },
+    "Choose a folder to show as a drive on the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunucuda sürücü olarak görünecek klasörü seçin."
+          }
+        }
+      }
+    },
+    "Choose the connections to add. Ones that already exist are unchecked.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eklenecek bağlantıları seçin. Zaten var olanlar seçili gelmez."
+          }
+        }
+      }
+    },
+    "Choose…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seç…"
+          }
+        }
+      }
+    },
+    "Clear": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temizle"
+          }
+        }
+      }
+    },
+    "Clear History": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geçmişi Temizle"
+          }
+        }
+      }
+    },
+    "Clear History…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geçmişi Temizle…"
+          }
+        }
+      }
+    },
+    "Clear connection history?": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlantı geçmişi temizlensin mi?"
+          }
+        }
+      }
+    },
+    "Command copied": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Komut kopyalandı"
+          }
+        }
+      }
+    },
+    "Common Speeds": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaygın Hızlar"
+          }
+        }
+      }
+    },
+    "Common speeds": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaygın hızlar"
+          }
+        }
+      }
+    },
+    "Confirm": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekrar"
+          }
+        }
+      }
+    },
+    "Connect": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlan"
+          }
+        }
+      }
+    },
+    "Connect (Return)": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlan (Return)"
+          }
+        }
+      }
+    },
+    "Connect to ${target}": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "${target} bağlantısını aç"
+          }
+        }
+      }
+    },
+    "Connect to favorites, recent connections and groups from the menu bar. Genius Remote keeps running there after you close its window.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Favorilere, son bağlantılara ve gruplara menü çubuğundan bağlanın. Pencere kapatılınca Genius Remote menü çubuğunda çalışmaya devam eder."
+          }
+        }
+      }
+    },
+    "Connect to…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlan…"
+          }
+        }
+      }
+    },
+    "Connected serial devices": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlı seri aygıtlar"
+          }
+        }
+      }
+    },
+    "Connected to %@ at %@.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ aygıtına bağlanıldı (%@)."
+          }
+        }
+      }
+    },
+    "Connection": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlantı"
+          }
+        }
+      }
+    },
+    "Connection closed. Exit code:": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlantı kapandı. Çıkış kodu:"
+          }
+        }
+      }
+    },
+    "Connection refused": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlantı reddedildi"
+          }
+        }
+      }
+    },
+    "Copy Password": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şifreyi Kopyala"
+          }
+        }
+      }
+    },
+    "Copy SSH Command": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH Komutunu Kopyala"
+          }
+        }
+      }
+    },
+    "Copy brew Command": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "brew Komutunu Kopyala"
+          }
+        }
+      }
+    },
+    "Copy the password after connecting": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlandıktan sonra şifreyi panoya kopyala"
+          }
+        }
+      }
+    },
+    "Genius Remote isn't allowed to open %@.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genius Remote'un %@ aygıtını açma izni yok."
+          }
+        }
+      }
+    },
+    "Genius Remote looks for ~/.ssh/config, which doesn't exist or can't be read.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genius Remote ~/.ssh/config dosyasını arar; dosya yok ya da okunamıyor."
+          }
+        }
+      }
+    },
+    "Genius Remote needs Accessibility access to minimize another app's window.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genius Remote’un başka bir uygulamanın penceresini küçültebilmesi için Erişilebilirlik izni gerekir."
+          }
+        }
+      }
+    },
+    "Genius Remote's console could not be found.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genius Remote'un konsolu bulunamadı."
+          }
+        }
+      }
+    },
+    "Couldn't Connect": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlanılamadı"
+          }
+        }
+      }
+    },
+    "Couldn't Delete the Profile": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profil Silinemedi"
+          }
+        }
+      }
+    },
+    "Couldn't connect to “%@”": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@” bağlantısı kurulamadı"
+          }
+        }
+      }
+    },
+    "Credentials": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kimlik Bilgileri"
+          }
+        }
+      }
+    },
+    "Ctrl-A Q quits · Ctrl-A B sends a break · Ctrl-A Ctrl-A sends Ctrl-A": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ctrl-A Q: çık · Ctrl-A B: break gönder · Ctrl-A Ctrl-A: Ctrl-A gönder"
+          }
+        }
+      }
+    },
+    "Data Bits": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veri Bitleri"
+          }
+        }
+      }
+    },
+    "Default (%@)": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Varsayılan (%@)"
+          }
+        }
+      }
+    },
+    "Delete": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sil"
+          }
+        }
+      }
+    },
+    "Delete %lld connections?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Delete %lld connection?"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Delete %lld connections?"
+                }
+              }
+            }
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld bağlantı silinsin mi?"
+          }
+        }
+      }
+    },
+    "Delete Group": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grubu Sil"
+          }
+        }
+      }
+    },
+    "Delete Profile": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profili Sil"
+          }
+        }
+      }
+    },
+    "Delete “%@”?": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@” silinsin mi?"
+          }
+        }
+      }
+    },
+    "Delete…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sil…"
+          }
+        }
+      }
+    },
+    "Device": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aygıt"
+          }
+        }
+      }
+    },
+    "Device connected": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aygıt bağlı"
+          }
+        }
+      }
+    },
+    "Devices": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aygıtlar"
+          }
+        }
+      }
+    },
+    "Display": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Görüntü"
+          }
+        }
+      }
+    },
+    "Domain account": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domain hesabı"
+          }
+        }
+      }
+    },
+    "Duplicate": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çoğalt"
+          }
+        }
+      }
+    },
+    "Each RDP connection can change these in its editor. Changing the resolution needs Windows 8.1 or Server 2012 R2 or later; if the window doesn't resize, choose Scale picture. All screens needs full screen. A shared folder appears as a drive on the server and works with FreeRDP only.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Her RDP bağlantısı bunları kendi düzenleme penceresinde değiştirebilir. Çözünürlüğü değiştirmek Windows 8.1 ya da Server 2012 R2 ve sonrasını gerektirir; pencere boyutlanmıyorsa Görüntüyü ölçekle’yi seçin. Tüm ekranlar yalnızca tam ekranda kullanılır. Paylaşılan klasör sunucuda bir sürücü olarak görünür ve yalnızca FreeRDP’de çalışır."
+          }
+        }
+      }
+    },
+    "Edit Connection": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlantıyı Düzenle"
+          }
+        }
+      }
+    },
+    "Edit…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Düzenle…"
+          }
+        }
+      }
+    },
+    "Encrypted Backup": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şifreli Yedek"
+          }
+        }
+      }
+    },
+    "Enter the passphrase used when this backup was exported.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu yedek dışa aktarılırken kullanılan parolayı girin."
+          }
+        }
+      }
+    },
+    "Even": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çift"
+          }
+        }
+      }
+    },
+    "Export Connections": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlantıları Dışa Aktar"
+          }
+        }
+      }
+    },
+    "Export Failed": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dışa Aktarma Başarısız"
+          }
+        }
+      }
+    },
+    "Export…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dışa Aktar…"
+          }
+        }
+      }
+    },
+    "Favorite": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Favori"
+          }
+        }
+      }
+    },
+    "Favorites": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Favoriler"
+          }
+        }
+      }
+    },
+    "File Transfer": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dosya Aktarımı"
+          }
+        }
+      }
+    },
+    "File transfer": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dosya aktarımı"
+          }
+        }
+      }
+    },
+    "Flow Control": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akış Kontrolü"
+          }
+        }
+      }
+    },
+    "FreeRDP can't copy files through the clipboard. To move files, choose a shared folder below; it appears as a drive on the server.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FreeRDP pano üzerinden dosya kopyalayamaz. Dosya aktarmak için aşağıdan bir paylaşılan klasör seçin; klasör sunucuda bir sürücü olarak görünür."
+          }
+        }
+      }
+    },
+    "FreeRDP receives the saved password directly and doesn't show Windows App's confirmation dialogs.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FreeRDP kayıtlı şifreyi doğrudan alır ve Windows App’in onay pencerelerini göstermez."
+          }
+        }
+      }
+    },
+    "FreeRDP stopped with %@. The full log is in ~/Library/Logs/GeniusRemote/freerdp-last-error.log.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FreeRDP %@ hatasıyla durdu. Kaydın tamamı ~/Library/Logs/GeniusRemote/freerdp-last-error.log dosyasında."
+          }
+        }
+      }
+    },
+    "Full Screen": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tam Ekran"
+          }
+        }
+      }
+    },
+    "General": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genel"
+          }
+        }
+      }
+    },
+    "Group": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grup"
+          }
+        }
+      }
+    },
+    "Group name": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grup adı"
+          }
+        }
+      }
+    },
+    "Groups": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gruplar"
+          }
+        }
+      }
+    },
+    "Host": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Host"
+          }
+        }
+      }
+    },
+    "Host not found": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunucu bulunamadı"
+          }
+        }
+      }
+    },
+    "Host unreachable": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunucuya ulaşılamıyor"
+          }
+        }
+      }
+    },
+    "Ignore certificate warnings": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sertifika uyarılarını yoksay"
+          }
+        }
+      }
+    },
+    "Import": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İçe Aktar"
+          }
+        }
+      }
+    },
+    "Import %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Bağlantıyı Aktar"
+          }
+        }
+      }
+    },
+    "Import .rdp Files": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ".rdp Dosyalarını İçe Aktar"
+          }
+        }
+      }
+    },
+    "Import .rdp Files…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ".rdp Dosyalarını İçe Aktar…"
+          }
+        }
+      }
+    },
+    "Import Complete": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İçe Aktarma Tamamlandı"
+          }
+        }
+      }
+    },
+    "Import Failed": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İçe Aktarma Başarısız"
+          }
+        }
+      }
+    },
+    "Import from SSH Config": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH Yapılandırmasından İçe Aktar"
+          }
+        }
+      }
+    },
+    "Import from SSH Config…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH Yapılandırmasından İçe Aktar…"
+          }
+        }
+      }
+    },
+    "Import or export connections": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlantıları içe veya dışa aktar"
+          }
+        }
+      }
+    },
+    "Import…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İçe Aktar…"
+          }
+        }
+      }
+    },
+    "Include passwords": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şifreleri dahil et"
+          }
+        }
+      }
+    },
+    "Instant RDP": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anlık RDP"
+          }
+        }
+      }
+    },
+    "Instant RDP…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anlık RDP…"
+          }
+        }
+      }
+    },
+    "Invalid port": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geçersiz port"
+          }
+        }
+      }
+    },
+    "Key File": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anahtar Dosyası"
+          }
+        }
+      }
+    },
+    "Keychain error: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anahtar Zinciri hatası: %@"
+          }
+        }
+      }
+    },
+    "Last Connected": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son Bağlantı"
+          }
+        }
+      }
+    },
+    "Library": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kitaplık"
+          }
+        }
+      }
+    },
+    "Manual": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elle"
+          }
+        }
+      }
+    },
+    "Minimize the Windows App window after connecting": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlandıktan sonra Windows App penceresini küçült"
+          }
+        }
+      }
+    },
+    "Name": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ad"
+          }
+        }
+      }
+    },
+    "New Connection": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni Bağlantı"
+          }
+        }
+      }
+    },
+    "New Connection (⌘N)": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni Bağlantı (⌘N)"
+          }
+        }
+      }
+    },
+    "New Group": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni Grup"
+          }
+        }
+      }
+    },
+    "New Group (⇧⌘N)": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni Grup (⇧⌘N)"
+          }
+        }
+      }
+    },
+    "New Group…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni Grup…"
+          }
+        }
+      }
+    },
+    "No Connections": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlantı Yok"
+          }
+        }
+      }
+    },
+    "No Group": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grupsuz"
+          }
+        }
+      }
+    },
+    "No Matches": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eşleşme Yok"
+          }
+        }
+      }
+    },
+    "No Profiles": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profil Yok"
+          }
+        }
+      }
+    },
+    "No SSH Config Found": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH Yapılandırması Bulunamadı"
+          }
+        }
+      }
+    },
+    "No connections match this filter.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu filtreye uyan bağlantı yok."
+          }
+        }
+      }
+    },
+    "No file transfer app such as Cyberduck is installed": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cyberduck gibi bir dosya aktarım uygulaması kurulu değil"
+          }
+        }
+      }
+    },
+    "No password is saved for this connection": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu bağlantı için kayıtlı şifre yok"
+          }
+        }
+      }
+    },
+    "No serial devices are connected": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlı seri aygıt yok"
+          }
+        }
+      }
+    },
+    "No username": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kullanıcı adı yok"
+          }
+        }
+      }
+    },
+    "None": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yok"
+          }
+        }
+      }
+    },
+    "None of the selected files has a server address.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seçilen dosyaların hiçbirinde sunucu adresi yok."
+          }
+        }
+      }
+    },
+    "Not connected": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlı değil"
+          }
+        }
+      }
+    },
+    "Notes": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notlar"
+          }
+        }
+      }
+    },
+    "Nothing Here": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Burada Bir Şey Yok"
+          }
+        }
+      }
+    },
+    "Nothing is saved. The address and password are forgotten once the connection opens.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hiçbir şey kaydedilmez. Adres ve şifre, bağlantı açılınca unutulur."
+          }
+        }
+      }
+    },
+    "Nothing to Import": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İçe Aktarılacak Bir Şey Yok"
+          }
+        }
+      }
+    },
+    "OK": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamam"
+          }
+        }
+      }
+    },
+    "Odd": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tek"
+          }
+        }
+      }
+    },
+    "Off": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kapalı"
+          }
+        }
+      }
+    },
+    "On": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Açık"
+          }
+        }
+      }
+    },
+    "On the server": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunucuda"
+          }
+        }
+      }
+    },
+    "On this Mac": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu Mac’te"
+          }
+        }
+      }
+    },
+    "Open App Store": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Store’u Aç"
+          }
+        }
+      }
+    },
+    "Open Genius Remote": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genius Remote’u Aç"
+          }
+        }
+      }
+    },
+    "Open Shortcuts": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kestirmeler’i Aç"
+          }
+        }
+      }
+    },
+    "Open System Settings…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sistem Ayarları’nı Aç…"
+          }
+        }
+      }
+    },
+    "Opens a saved SSH or RDP connection.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kayıtlı bir SSH veya RDP bağlantısını açar."
+          }
+        }
+      }
+    },
+    "Opens a search box from any app: type a name, host or user and press Return to connect.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hangi uygulamada olursanız olun bir arama kutusu açar: ad, host veya kullanıcı yazın, bağlanmak için Return’e basın."
+          }
+        }
+      }
+    },
+    "Opens in your terminal app. Press Ctrl-A, then Q to close the connection.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminal uygulamanızda açılır. Bağlantıyı kapatmak için Ctrl-A'ya, ardından Q'ya basın."
+          }
+        }
+      }
+    },
+    "Optional": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İsteğe bağlı"
+          }
+        }
+      }
+    },
+    "Parity": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parite"
+          }
+        }
+      }
+    },
+    "Passphrase": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parola"
+          }
+        }
+      }
+    },
+    "Passphrases don't match.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parolalar eşleşmiyor."
+          }
+        }
+      }
+    },
+    "Password": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şifre"
+          }
+        }
+      }
+    },
+    "Password copied — clears in 30 seconds": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şifre kopyalandı — 30 saniye sonra silinecek"
+          }
+        }
+      }
+    },
+    "Password copied — clears in 90 seconds": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şifre kopyalandı — 90 saniye sonra silinecek"
+          }
+        }
+      }
+    },
+    "Passwords are not included. The file is not encrypted.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şifreler dahil edilmez. Dosya şifrelenmez."
+          }
+        }
+      }
+    },
+    "Paste it when sudo asks. Clipboard managers are told not to keep it, and it is cleared after 90 seconds. \"Copy Password\" in a connection's menu (⇧⌘C) copies it at any time.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sudo şifre istediğinde yapıştırın. Pano yöneticilerine şifreyi saklamamaları bildirilir ve 90 saniye sonra panodan silinir. Bağlantının menüsündeki \"Şifreyi Kopyala\" (⇧⌘C) istediğiniz zaman kopyalar."
+          }
+        }
+      }
+    },
+    "Port": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Port"
+          }
+        }
+      }
+    },
+    "Port must be between 1 and 65535.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Port 1 ile 65535 arasında olmalı."
+          }
+        }
+      }
+    },
+    "Press any key to close this window.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pencereyi kapatmak için bir tuşa basın."
+          }
+        }
+      }
+    },
+    "Production server": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canlı sunucu"
+          }
+        }
+      }
+    },
+    "Quick Connect…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hızlı Bağlan…"
+          }
+        }
+      }
+    },
+    "Quick connect": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hızlı bağlan"
+          }
+        }
+      }
+    },
+    "Quit Genius Remote": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genius Remote’tan Çık"
+          }
+        }
+      }
+    },
+    "RDP": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RDP"
+          }
+        }
+      }
+    },
+    "RDP Sessions": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RDP Oturumları"
+          }
+        }
+      }
+    },
+    "RDP client": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RDP istemcisi"
+          }
+        }
+      }
+    },
+    "RDP connections are set to open in FreeRDP. Install it with Homebrew, or choose Windows App in Settings:\n\n%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RDP bağlantıları FreeRDP ile açılacak şekilde ayarlı. Homebrew ile kurun ya da Ayarlar’dan Windows App’i seçin:\n\n%@"
+          }
+        }
+      }
+    },
+    "RDP connections open in Microsoft Windows App. Install it from the App Store, or with Homebrew:\n\n%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RDP bağlantıları Microsoft Windows App ile açılır. App Store’dan ya da Homebrew ile kurabilirsiniz:\n\n%@"
+          }
+        }
+      }
+    },
+    "Reachable · %lld ms": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulaşılabilir · %lld ms"
+          }
+        }
+      }
+    },
+    "Recent": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son Kullanılanlar"
+          }
+        }
+      }
+    },
+    "Recent connections": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son bağlantılar"
+          }
+        }
+      }
+    },
+    "Refresh": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yenile"
+          }
+        }
+      }
+    },
+    "Release Notes": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sürüm Notları"
+          }
+        }
+      }
+    },
+    "Remove from Favorites": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Favorilerden Çıkar"
+          }
+        }
+      }
+    },
+    "Removes the Recent list and last-connected times. Connections aren't deleted.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son Kullanılanlar listesini ve son bağlanma zamanlarını siler. Bağlantılar silinmez."
+          }
+        }
+      }
+    },
+    "Rename Group": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grubu Yeniden Adlandır"
+          }
+        }
+      }
+    },
+    "Rename…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeniden Adlandır…"
+          }
+        }
+      }
+    },
+    "Required": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zorunlu"
+          }
+        }
+      }
+    },
+    "SSH": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH"
+          }
+        }
+      }
+    },
+    "SSH command copied": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH komutu kopyalandı"
+          }
+        }
+      }
+    },
+    "SSH terminal": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH terminali"
+          }
+        }
+      }
+    },
+    "Save": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaydet"
+          }
+        }
+      }
+    },
+    "Saved passwords are removed from the Keychain too. This can't be undone.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kayıtlı şifreler Anahtar Zinciri’nden de silinir. Bu işlem geri alınamaz."
+          }
+        }
+      }
+    },
+    "Scale picture": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Görüntüyü ölçekle"
+          }
+        }
+      }
+    },
+    "Search a connection's name in Spotlight to connect. In the Shortcuts app, add Genius Remote's \"Connect\" action to a new shortcut and pick a connection.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlanmak için Spotlight’ta bağlantının adını arayın. Kestirmeler’de yeni bir kestirmeye Genius Remote’un “Bağlan” eylemini ekleyip bir bağlantı seçin."
+          }
+        }
+      }
+    },
+    "Search name, host or user": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ad, host veya kullanıcı ara"
+          }
+        }
+      }
+    },
+    "Select All": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tümünü Seç"
+          }
+        }
+      }
+    },
+    "Select None": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hiçbirini Seçme"
+          }
+        }
+      }
+    },
+    "Separate tags with commas.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etiketleri virgülle ayırın."
+          }
+        }
+      }
+    },
+    "Serial": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seri"
+          }
+        }
+      }
+    },
+    "Serial Port": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seri Port"
+          }
+        }
+      }
+    },
+    "Server": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunucu"
+          }
+        }
+      }
+    },
+    "Session": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oturum"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayarlar"
+          }
+        }
+      }
+    },
+    "Settings (⌘,)": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayarlar (⌘,)"
+          }
+        }
+      }
+    },
+    "Settings…": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayarlar…"
+          }
+        }
+      }
+    },
+    "Share": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paylaş"
+          }
+        }
+      }
+    },
+    "Share clipboard": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Panoyu paylaş"
+          }
+        }
+      }
+    },
+    "Shared folder": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paylaşılan klasör"
+          }
+        }
+      }
+    },
+    "Shortcuts and Spotlight": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kestirmeler ve Spotlight"
+          }
+        }
+      }
+    },
+    "Show in menu bar": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menü çubuğunda göster"
+          }
+        }
+      }
+    },
+    "Show server status": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunucu durumunu göster"
+          }
+        }
+      }
+    },
+    "Sort": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sırala"
+          }
+        }
+      }
+    },
+    "Sort By": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sıralama"
+          }
+        }
+      }
+    },
+    "Sort: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sıralama: %@"
+          }
+        }
+      }
+    },
+    "Sort: Manual. Drag connections to reorder them.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sıralama: Elle. Bağlantıları sürükleyerek sıralayın."
+          }
+        }
+      }
+    },
+    "Sound": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ses"
+          }
+        }
+      }
+    },
+    "Speed": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hız"
+          }
+        }
+      }
+    },
+    "Speed must be between %@ and %@.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hız %@ ile %@ arasında olmalı."
+          }
+        }
+      }
+    },
+    "Stop Bits": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durma Bitleri"
+          }
+        }
+      }
+    },
+    "Tags": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etiketler"
+          }
+        }
+      }
+    },
+    "The account is disabled or has expired.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hesap devre dışı ya da süresi dolmuş."
+          }
+        }
+      }
+    },
+    "The account is locked, usually after too many wrong passwords. Wait for it to unlock or ask an administrator, and check that the saved password is current.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hesap kilitli; bu genellikle çok sayıda yanlış şifre denemesinden sonra olur. Kilidin açılmasını bekleyin ya da bir yöneticiye başvurun ve kayıtlı şifrenin güncel olduğunu kontrol edin."
+          }
+        }
+      }
+    },
+    "The file is encrypted with your passphrase. Without it the backup can't be opened.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dosya parolanızla şifrelenir. Parola olmadan yedek açılamaz."
+          }
+        }
+      }
+    },
+    "The host name can't be used in a link.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunucu adı bir bağlantı adresinde kullanılamıyor."
+          }
+        }
+      }
+    },
+    "The passphrase is incorrect.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parola hatalı."
+          }
+        }
+      }
+    },
+    "The password has expired. Change it on the server, then save the new one in Genius Remote.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şifrenin süresi dolmuş. Sunucuda değiştirin, ardından yeni şifreyi Genius Remote’a kaydedin."
+          }
+        }
+      }
+    },
+    "The password is kept in your Keychain and copied to the clipboard for 30 seconds when you connect.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şifre Anahtar Zinciri’nde saklanır ve bağlanırken 30 saniyeliğine panoya kopyalanır."
+          }
+        }
+      }
+    },
+    "The password is kept in your Keychain and entered for you when ssh asks.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şifre Anahtar Zinciri’nde saklanır ve ssh sorduğunda otomatik girilir."
+          }
+        }
+      }
+    },
+    "The password is kept in your Keychain and passed to FreeRDP when you connect.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şifre Anahtar Zinciri’nde saklanır ve bağlanırken FreeRDP’ye iletilir."
+          }
+        }
+      }
+    },
+    "The password is kept in your Keychain. The key file is used by SSH connections only.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şifre Anahtar Zinciri’nde saklanır. Anahtar dosyası yalnızca SSH bağlantılarında kullanılır."
+          }
+        }
+      }
+    },
+    "The profile's user name and password are used. Change them in Settings > Credentials.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profilin kullanıcı adı ve şifresi kullanılır. Bunları Ayarlar > Kimlik Bilgileri’nden değiştirin."
+          }
+        }
+      }
+    },
+    "The saved password is entered automatically in both. The first iTerm2 connection asks once for permission to control iTerm2. If iTerm2 is removed, connections open in Terminal.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kayıtlı şifre ikisinde de otomatik girilir. İlk iTerm2 bağlantısında iTerm2’yi denetleme izni bir kez sorulur. iTerm2 kaldırılırsa bağlantılar Terminal’de açılır."
+          }
+        }
+      }
+    },
+    "The serial settings are invalid.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seri bağlantı ayarları geçersiz."
+          }
+        }
+      }
+    },
+    "The server and FreeRDP couldn't agree on a secure connection.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunucu ile FreeRDP güvenli bir bağlantı üzerinde anlaşamadı."
+          }
+        }
+      }
+    },
+    "The server couldn't be reached. Check the host, port and your network or VPN.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunucuya ulaşılamadı. Host’u, portu ve ağ ya da VPN bağlantınızı kontrol edin."
+          }
+        }
+      }
+    },
+    "The server name couldn't be found. Check the host and your network or VPN.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunucu adı bulunamadı. Host’u ve ağ ya da VPN bağlantınızı kontrol edin."
+          }
+        }
+      }
+    },
+    "The server's certificate has changed since the last connection. If that's expected, delete its entry in ~/.config/freerdp/server and connect again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sunucunun sertifikası son bağlantıdan bu yana değişmiş. Bu beklenen bir değişiklikse ~/.config/freerdp/server içindeki kaydını silip yeniden bağlanın."
+          }
+        }
+      }
+    },
+    "The user name or password is wrong. Check them in the connection or its credential profile.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kullanıcı adı ya da şifre yanlış. Bağlantıda ya da kullandığı kimlik bilgisi profilinde kontrol edin."
+          }
+        }
+      }
+    },
+    "This account isn't allowed to sign in over Remote Desktop.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu hesabın Uzak Masaüstü ile oturum açma izni yok."
+          }
+        }
+      }
+    },
+    "This backup is encrypted. Enter its passphrase.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu yedek şifreli. Parolasını girin."
+          }
+        }
+      }
+    },
+    "This backup was made by a newer version of Genius Remote (format %lld).": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu yedek Genius Remote’un daha yeni bir sürümüyle oluşturulmuş (format %lld)."
+          }
+        }
+      }
+    },
+    "This connection no longer exists.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu bağlantı artık yok."
+          }
+        }
+      }
+    },
+    "This connection only": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yalnızca bu bağlantı"
+          }
+        }
+      }
+    },
+    "This device isn't connected right now.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu aygıt şu anda bağlı değil."
+          }
+        }
+      }
+    },
+    "This is not a Genius Remote backup file.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu bir Genius Remote yedek dosyası değil."
+          }
+        }
+      }
+    },
+    "Timed out": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaman aşımı"
+          }
+        }
+      }
+    },
+    "Type": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tür"
+          }
+        }
+      }
+    },
+    "Types": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Türler"
+          }
+        }
+      }
+    },
+    "Unreachable: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulaşılamıyor: %@"
+          }
+        }
+      }
+    },
+    "Use all screens": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm ekranları kullan"
+          }
+        }
+      }
+    },
+    "Username": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kullanıcı adı"
+          }
+        }
+      }
+    },
+    "Version": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sürüm"
+          }
+        }
+      }
+    },
+    "When resized": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boyutlanınca"
+          }
+        }
+      }
+    },
+    "While the window is open, Genius Remote tries each server's port every minute and shows a green or red dot.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pencere açıkken Genius Remote her sunucunun portunu dakikada bir dener ve yeşil ya da kırmızı bir nokta gösterir."
+          }
+        }
+      }
+    },
+    "Window, %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pencere, %@"
+          }
+        }
+      }
+    },
+    "Windows App asks for the password itself; Genius Remote copies it to the clipboard for 30 seconds.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Windows App şifreyi kendisi sorar; Genius Remote şifreyi 30 saniyeliğine panoya kopyalar."
+          }
+        }
+      }
+    },
+    "prod, linux, dc": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "prod, linux, dc"
+          }
+        }
+      }
+    },
+    "sftp in the SSH terminal": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSH terminalinde sftp"
+          }
+        }
+      }
+    },
+    "~/.ssh/config has no Host entries to import. Entries with wildcards are skipped.": {
+      "extractionState": "manual",
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "~/.ssh/config içinde içe aktarılacak Host girdisi yok. Joker karakter içeren girdiler atlanır."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

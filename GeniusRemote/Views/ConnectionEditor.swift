@@ -128,10 +128,10 @@ struct ConnectionEditor: View {
                         Text(selectedProfile != nil
                              ? "The profile's user name and password are used. Change them in Settings > Credentials."
                              : draft.type == .ssh
-                             ? "The password is kept in your Keychain and entered for you when ssh asks."
+                             ? "The password is kept encrypted on this Mac and entered for you when ssh asks."
                              : RDPClient.current == .freeRDP
-                             ? "The password is kept in your Keychain and passed to FreeRDP when you connect."
-                             : "The password is kept in your Keychain and copied to the clipboard for 30 seconds when you connect.")
+                             ? "The password is kept encrypted on this Mac and passed to FreeRDP when you connect."
+                             : "The password is kept encrypted on this Mac and copied to the clipboard for 30 seconds when you connect.")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }
@@ -221,7 +221,7 @@ struct ConnectionEditor: View {
 
     private func load() {
         if let connection {
-            draft = ConnectionDraft(connection: connection, password: KeychainPasswordStore.shared.password(for: connection.id))
+            draft = ConnectionDraft(connection: connection, password: SealedPasswordStore.shared.password(for: connection.id))
         } else {
             draft.groupID = defaultGroupID
         }
@@ -245,7 +245,7 @@ struct ConnectionEditor: View {
         guard draft.isValid else { return }
         let target = connection ?? Connection(name: "", host: "", type: draft.type, username: "")
         do {
-            try KeychainPasswordStore.shared.setPassword(draft.ownPassword, for: target.id)
+            try SealedPasswordStore.shared.setPassword(draft.ownPassword, for: target.id)
         } catch {
             errorMessage = error.localizedDescription
             return

@@ -2,7 +2,7 @@ import Foundation
 import SwiftData
 
 /// A user name, password and optional SSH key shared by several connections, such as a domain
-/// account. The password is in the Keychain under the profile's `id`.
+/// account. The password is stored under the profile's `id`.
 @Model
 final class CredentialProfile {
     @Attribute(.unique) var id: UUID
@@ -44,7 +44,7 @@ extension CredentialProfile {
 
 /// Every model in the store, for each `ModelContainer`.
 enum AppSchema {
-    static let models: [any PersistentModel.Type] = [Connection.self, ConnectionGroup.self, CredentialProfile.self]
+    static let models: [any PersistentModel.Type] = [Connection.self, ConnectionGroup.self, CredentialProfile.self, StoredPassword.self]
 
     static func container(inMemory: Bool = false) throws -> ModelContainer {
         if inMemory {

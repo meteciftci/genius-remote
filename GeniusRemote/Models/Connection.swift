@@ -131,7 +131,7 @@ final class Connection {
         return keyFilePath
     }
 
-    /// The Keychain entry holding the password: the profile's, or the connection's own.
+    /// The ID the password is stored under: the profile's, or the connection's own.
     var passwordID: UUID {
         credentialProfile?.id ?? id
     }

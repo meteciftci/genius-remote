@@ -287,7 +287,7 @@ struct ContentView: View {
             connections: connections,
             groups: groups,
             includePasswords: passphrase != nil,
-            passwords: KeychainPasswordStore.shared
+            passwords: SealedPasswordStore.shared
         )
         Task {
             do {
@@ -318,7 +318,7 @@ struct ContentView: View {
         Task {
             do {
                 let payload = try await Task.detached { try Backup.decode(data, passphrase: passphrase) }.value
-                let summary = try BackupStore.importPayload(payload, into: modelContext, passwords: KeychainPasswordStore.shared)
+                let summary = try BackupStore.importPayload(payload, into: modelContext, passwords: SealedPasswordStore.shared)
                 pendingImport = nil
                 alert = AlertContent(
                     title: String(localized: "Import Complete"),

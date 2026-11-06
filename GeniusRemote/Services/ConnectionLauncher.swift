@@ -38,7 +38,7 @@ final class ConnectionLauncher {
     /// Settings › SSH: copy the password once an SSH connection opens, for sudo.
     static let copiesPasswordAfterSSHKey = "copyPasswordAfterSSH"
 
-    init(passwords: PasswordStore = KeychainPasswordStore.shared, pasteboard: NSPasteboard = .general) {
+    init(passwords: PasswordStore = SealedPasswordStore.shared, pasteboard: NSPasteboard = .general) {
         self.passwords = passwords
         self.pasteboard = pasteboard
     }
@@ -73,7 +73,7 @@ final class ConnectionLauncher {
     }
 
     /// Opens an RDP session from the Instant RDP window. Nothing is saved: the password goes to the
-    /// client without touching the Keychain, and the connection isn't remembered.
+    /// client without storing it, and the connection isn't remembered.
     func connectInstant(_ session: InstantRDP) async throws {
         try await connectRDP(session.target, password: session.password)
     }

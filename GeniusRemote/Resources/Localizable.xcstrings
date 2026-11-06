@@ -1470,17 +1470,6 @@
         }
       }
     },
-    "Keychain error: %@": {
-      "extractionState": "manual",
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Anahtar Zinciri hatası: %@"
-          }
-        }
-      }
-    },
     "Last Connected": {
       "extractionState": "manual",
       "localizations": {
@@ -2306,13 +2295,13 @@
         }
       }
     },
-    "Saved passwords are removed from the Keychain too. This can't be undone.": {
+    "Saved passwords are deleted too. This can't be undone.": {
       "extractionState": "manual",
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kayıtlı şifreler Anahtar Zinciri’nden de silinir. Bu işlem geri alınamaz."
+            "value": "Kayıtlı şifreler de silinir. Bu işlem geri alınamaz."
           }
         }
       }
@@ -2691,46 +2680,46 @@
         }
       }
     },
-    "The password is kept in your Keychain and copied to the clipboard for 30 seconds when you connect.": {
+    "The password is kept encrypted on this Mac and copied to the clipboard for 30 seconds when you connect.": {
       "extractionState": "manual",
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Şifre Anahtar Zinciri’nde saklanır ve bağlanırken 30 saniyeliğine panoya kopyalanır."
+            "value": "Şifre bu Mac’te şifreli olarak saklanır ve bağlanırken 30 saniyeliğine panoya kopyalanır."
           }
         }
       }
     },
-    "The password is kept in your Keychain and entered for you when ssh asks.": {
+    "The password is kept encrypted on this Mac and entered for you when ssh asks.": {
       "extractionState": "manual",
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Şifre Anahtar Zinciri’nde saklanır ve ssh sorduğunda otomatik girilir."
+            "value": "Şifre bu Mac’te şifreli olarak saklanır ve ssh sorduğunda otomatik girilir."
           }
         }
       }
     },
-    "The password is kept in your Keychain and passed to FreeRDP when you connect.": {
+    "The password is kept encrypted on this Mac and passed to FreeRDP when you connect.": {
       "extractionState": "manual",
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Şifre Anahtar Zinciri’nde saklanır ve bağlanırken FreeRDP’ye iletilir."
+            "value": "Şifre bu Mac’te şifreli olarak saklanır ve bağlanırken FreeRDP’ye iletilir."
           }
         }
       }
     },
-    "The password is kept in your Keychain. The key file is used by SSH connections only.": {
+    "The password is kept encrypted on this Mac. The key file is used by SSH connections only.": {
       "extractionState": "manual",
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Şifre Anahtar Zinciri’nde saklanır. Anahtar dosyası yalnızca SSH bağlantılarında kullanılır."
+            "value": "Şifre bu Mac’te şifreli olarak saklanır. Anahtar dosyası yalnızca SSH bağlantılarında kullanılır."
           }
         }
       }

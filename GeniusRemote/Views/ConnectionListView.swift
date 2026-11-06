@@ -109,7 +109,7 @@ struct ConnectionListView: View {
             ) {
                 Button("Delete", role: .destructive) { delete(pendingDeletion) }
             } message: {
-                Text("Saved passwords are removed from the Keychain too. This can't be undone.")
+                Text("Saved passwords are deleted too. This can't be undone.")
             }
             .onDeleteCommand {
                 pendingDeletion = selectedConnections
@@ -234,7 +234,7 @@ struct ConnectionListView: View {
         copy.credentialProfile = connection.credentialProfile
         copy.sortIndex = ConnectionOrder.nextIndex(in: modelContext)
         modelContext.insert(copy)
-        let store = KeychainPasswordStore.shared
+        let store: SealedPasswordStore = SealedPasswordStore.shared
         if let password = store.password(for: connection.id) {
             try? store.setPassword(password, for: copy.id)
         }
@@ -244,7 +244,7 @@ struct ConnectionListView: View {
 
     private func delete(_ items: [Connection]) {
         for connection in items {
-            try? KeychainPasswordStore.shared.setPassword(nil, for: connection.id)
+            try? SealedPasswordStore.shared.setPassword(nil, for: connection.id)
             selection.remove(connection.id)
             modelContext.delete(connection)
         }

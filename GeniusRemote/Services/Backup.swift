@@ -38,7 +38,7 @@ nonisolated struct BackupPayload: Codable, Equatable, Sendable {
         var password: String?
     }
 
-    /// A credential profile without its password, which stays in the Keychain.
+    /// A credential profile without its password, which stays in the store.
     struct Profile: Codable, Equatable, Sendable {
         var id: UUID
         var name: String

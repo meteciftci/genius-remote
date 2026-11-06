@@ -16,6 +16,7 @@ struct GeniusRemoteApp: App {
     init() {
         LaunchFiles.cleanUp()
         container = Self.makeContainer()
+        SealedPasswordStore.shared = SealedPasswordStore(container: container)
         let launcher = ConnectionLauncher()
         _launcher = State(initialValue: launcher)
         QuickConnectPanel.shared.configure(container: container, launcher: launcher)

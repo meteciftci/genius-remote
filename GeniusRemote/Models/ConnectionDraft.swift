@@ -77,7 +77,7 @@ struct ConnectionDraft: Equatable {
         return (usesProfile || !trimmedUsername.isEmpty) && isPortValid
     }
 
-    /// The password to keep under the connection's own Keychain entry; none with a profile or for serial.
+    /// The password to keep under the connection's own ID; none with a profile or for serial.
     var ownPassword: String? { usesProfile || !type.usesNetwork ? nil : password }
 
     func apply(to connection: Connection, group: ConnectionGroup?, profile: CredentialProfile? = nil) {

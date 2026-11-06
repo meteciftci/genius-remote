@@ -98,7 +98,7 @@ struct CredentialsSettings: View {
 
     private func delete(_ profile: CredentialProfile) {
         do {
-            try CredentialProfile.delete(profile, in: modelContext, passwords: KeychainPasswordStore.shared)
+            try CredentialProfile.delete(profile, in: modelContext, passwords: SealedPasswordStore.shared)
             selection = nil
         } catch {
             errorMessage = error.localizedDescription
@@ -181,7 +181,7 @@ private struct ProfileEditor: View {
                         }
                     }
                 } footer: {
-                    Text("The password is kept in your Keychain. The key file is used by SSH connections only.")
+                    Text("The password is kept encrypted on this Mac. The key file is used by SSH connections only.")
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }
@@ -214,7 +214,7 @@ private struct ProfileEditor: View {
         name = profile.name
         username = profile.username
         keyFilePath = profile.keyFilePath ?? ""
-        password = KeychainPasswordStore.shared.password(for: profile.id) ?? ""
+        password = SealedPasswordStore.shared.password(for: profile.id) ?? ""
     }
 
     private func save() {
@@ -225,7 +225,7 @@ private struct ProfileEditor: View {
         case .existing(let existing): profile = existing
         }
         do {
-            try KeychainPasswordStore.shared.setPassword(password, for: profile.id)
+            try SealedPasswordStore.shared.setPassword(password, for: profile.id)
         } catch {
             errorMessage = error.localizedDescription
             return

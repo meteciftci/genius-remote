@@ -1,80 +1,97 @@
+import CryptoKit
 import Foundation
-import Security
+import SwiftData
 
-/// Stores connection passwords outside SwiftData, keyed by connection ID.
+/// Stores connection passwords, keyed by connection ID.
 protocol PasswordStore {
     func password(for id: UUID) -> String?
     func setPassword(_ password: String?, for id: UUID) throws
 }
 
-enum KeychainError: LocalizedError {
-    case unexpectedStatus(OSStatus)
+/// Keeps passwords in the connection store, each sealed with AES-GCM. The key is a random 256-bit
+/// value in a file only the current user can read, so the database alone (a copy, a backup, a file
+/// shared by mistake) doesn't reveal passwords. It doesn't protect against a program running as
+/// the same user, which can read the key file too.
+final class SealedPasswordStore: PasswordStore {
+    /// Set once by the app when its container exists.
+    nonisolated(unsafe) static var shared: SealedPasswordStore!
 
-    var errorDescription: String? {
-        switch self {
-        case .unexpectedStatus(let status):
-            let message = SecCopyErrorMessageString(status, nil) as String? ?? "\(status)"
-            return String(localized: "Keychain error: \(message)")
-        }
-    }
-}
+    private let context: ModelContext
+    private let keyURL: URL
+    private var key: SymmetricKey?
 
-struct KeychainPasswordStore: PasswordStore {
-    static let shared = KeychainPasswordStore()
-
-    var service = "com.meteciftci.GeniusRemote"
-
-    private func baseQuery(for id: UUID) -> [String: Any] {
-        [
-            kSecClass as String: kSecClassGenericPassword,
-            kSecAttrService as String: service,
-            kSecAttrAccount as String: id.uuidString,
-        ]
+    init(container: ModelContainer, keyURL: URL = SealedPasswordStore.defaultKeyURL) {
+        self.context = ModelContext(container)
+        self.context.autosaveEnabled = false
+        self.keyURL = keyURL
     }
 
-    /// Passwords already read in this run, so the Keychain is asked at most once per connection.
-    private static var cache: [UUID: String] = [:]
+    static var defaultKeyURL: URL {
+        URL.applicationSupportDirectory.appending(path: "GeniusRemote/secret.key")
+    }
 
     func password(for id: UUID) -> String? {
-        if let cached = Self.cache[id] { return cached }
-        var query = baseQuery(for: id)
-        query[kSecReturnData as String] = true
-        query[kSecMatchLimit as String] = kSecMatchLimitOne
-
-        var result: AnyObject?
-        guard SecItemCopyMatching(query as CFDictionary, &result) == errSecSuccess,
-              let data = result as? Data
+        guard let stored = stored(id), let key = try? loadKey(create: false),
+              let box = try? AES.GCM.SealedBox(combined: stored.sealed),
+              let data = try? AES.GCM.open(box, using: key, authenticating: Data(id.uuidString.utf8))
         else { return nil }
-        let password = String(data: data, encoding: .utf8)
-        Self.cache[id] = password
-        return password
+        return String(data: data, encoding: .utf8)
     }
 
     /// Saves the password; `nil` or an empty string removes it.
     func setPassword(_ password: String?, for id: UUID) throws {
-        let query = baseQuery(for: id)
-        Self.cache[id] = nil
-
+        let existing = stored(id)
         guard let password, !password.isEmpty else {
-            let status = SecItemDelete(query as CFDictionary)
-            guard status == errSecSuccess || status == errSecItemNotFound else {
-                throw KeychainError.unexpectedStatus(status)
-            }
+            if let existing { context.delete(existing) }
+            try context.save()
             return
         }
-
-        let data = Data(password.utf8)
-        let updateStatus = SecItemUpdate(query as CFDictionary, [kSecValueData as String: data] as CFDictionary)
-        if updateStatus == errSecItemNotFound {
-            var item = query
-            item[kSecValueData as String] = data
-            item[kSecAttrLabel as String] = "Genius Remote"
-            let addStatus = SecItemAdd(item as CFDictionary, nil)
-            guard addStatus == errSecSuccess else { throw KeychainError.unexpectedStatus(addStatus) }
-        } else if updateStatus != errSecSuccess {
-            throw KeychainError.unexpectedStatus(updateStatus)
+        let box = try AES.GCM.seal(Data(password.utf8), using: loadKey(create: true), authenticating: Data(id.uuidString.utf8))
+        guard let sealed = box.combined else { throw CocoaError(.coderInvalidValue) }
+        if let existing {
+            existing.sealed = sealed
+        } else {
+            context.insert(StoredPassword(id: id, sealed: sealed))
         }
-        Self.cache[id] = password
+        try context.save()
+    }
+
+    private func stored(_ id: UUID) -> StoredPassword? {
+        var descriptor = FetchDescriptor<StoredPassword>(predicate: #Predicate { $0.id == id })
+        descriptor.fetchLimit = 1
+        return try? context.fetch(descriptor).first
+    }
+
+    /// Reads the key file; with `create`, makes a new key when there is none (or it is unusable).
+    private func loadKey(create: Bool) throws -> SymmetricKey {
+        if let key { return key }
+        if let data = try? Data(contentsOf: keyURL), data.count == 32 {
+            let loaded = SymmetricKey(data: data)
+            key = loaded
+            return loaded
+        }
+        guard create else { throw CocoaError(.fileReadNoSuchFile) }
+        let fresh = SymmetricKey(size: .bits256)
+        let fileManager = FileManager.default
+        try fileManager.createDirectory(at: keyURL.deletingLastPathComponent(), withIntermediateDirectories: true, attributes: [.posixPermissions: 0o700])
+        try? fileManager.removeItem(at: keyURL)
+        let bytes = fresh.withUnsafeBytes { Data($0) }
+        guard fileManager.createFile(atPath: keyURL.path, contents: bytes, attributes: [.posixPermissions: 0o600]) else {
+            throw CocoaError(.fileWriteUnknown, userInfo: [NSFilePathErrorKey: keyURL.path])
+        }
+        key = fresh
+        return fresh
+    }
+}
+
+@Model
+final class StoredPassword {
+    @Attribute(.unique) var id: UUID
+    var sealed: Data
+
+    init(id: UUID, sealed: Data) {
+        self.id = id
+        self.sealed = sealed
     }
 }
 

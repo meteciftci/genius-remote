@@ -1,59 +1,59 @@
 # Genius Remote
 
-**Türkçe** | [English](README.en.md)
+**English** | [Türkçe](README.tr.md)
 
-macOS için sade bir SSH, RDP ve seri (COM) bağlantı yöneticisi. Bağlantılarınızı kaydedin, çift tıklayarak bağlanın.
+A simple SSH, RDP and serial (COM) connection manager for macOS. Save your connections and open them with a double-click.
 
-![Ana pencere](docs/screenshots/tr/main.png)
+![Main window](docs/screenshots/en/main.png)
 
-## Özellikler
+## Features
 
-- **SSH**: Bağlantı Terminal ya da iTerm2'de açılır; hangisinin kullanılacağı Ayarlar'da seçilir. Kayıtlı şifre otomatik girilir; isteğe bağlı SSH anahtar dosyası seçilebilir. Bağlantı menüsündeki "Dosya Aktarımı" sunucuyu Cyberduck, Transmit ya da ForkLift gibi bir uygulamada, bunlar yoksa terminalde sftp ile açar. sudo için şifre gerekiyorsa bağlantı menüsündeki "Şifreyi Kopyala" (⇧⌘C) kullanılabilir ya da Ayarlar > SSH'den şifrenin her bağlantıdan sonra panoya kopyalanması açılabilir.
-- **RDP**: Varsayılan istemci [FreeRDP](https://www.freerdp.com)'dir ve şifreyi doğrudan alır. İsterseniz Ayarlar'dan [Microsoft Windows App](https://apps.apple.com/app/id1295203466) seçilebilir. Görüntü (pencere boyutu ya da tam ekran, tüm ekranlar), pano, paylaşılan klasör ve ses Ayarlar'da varsayılan olarak, her bağlantıda da ayrı ayrı seçilebilir; pencere boyutlandırılınca çözünürlük güncellenir ya da (eski sunucular için) görüntü ölçeklenir. Paylaşılan klasör yalnızca FreeRDP'de çalışır. FreeRDP bağlanamazsa sebebi (hesap kilitli, yanlış şifre, sunucuya ulaşılamıyor gibi) bir uyarıyla gösterilir. FreeRDP'nin kısayolları sol Control + Option + Shift ile çalışır (M küçültür, Enter tam ekran, D bağlantıyı keser); böylece sağ Shift ile büyük harf yazmak kısayolu tetiklemez. Bunun için `~/.config/freerdp/sdl-freerdp.json` dosyası, kendi ayarınız yoksa oluşturulur.
-- **Seri (COM)**: Switch, router ya da sunucu konsollarına PuTTY'deki gibi USB-seri kabloyla bağlanın. Aygıt, takılı `/dev/cu.*` aygıtları listesinden seçilir ya da elle yazılır. Hız (300'den 921600'e hazır değerler ya da elle girilen değer), veri biti, parite, durma biti ve akış kontrolü (RTS/CTS, XON/XOFF) bağlantı başına ayarlanır. Bağlantı, seçili terminal uygulamasında Genius Remote'un kendi seri konsoluyla açılır: **Ctrl-A Q** bağlantıyı kapatır, **Ctrl-A B** break sinyali gönderir, **Ctrl-A Ctrl-A** ise Ctrl-A gönderir. Ek bir kurulum gerekmez.
-- **Gruplar, favoriler ve sıralama**: Bağlantıları gruplara ayırın, sık kullandıklarınızı favorilere ekleyin, ad, host veya kullanıcıya göre arayın. Liste elle (sürükleyip bırakarak), ada ya da son bağlantıya göre sıralanabilir.
-- **Kimlik bilgisi profilleri**: Bir domain hesabı gibi ortak kullanıcı adı ve şifreyi Ayarlar > Kimlik Bilgileri'nde bir kez tanımlayıp birden fazla bağlantıda kullanın. Şifre değişince tek yerden güncellenir. Şifreler yalnızca Anahtar Zinciri'nde durur; yedeğe profil adı ve kullanıcı adı girer, şifre girmez.
-- **Notlar ve etiketler**: Her bağlantıya not ve `prod`, `linux` gibi etiketler ekleyin. Etiketler kenar çubuğunda listelenir; arama notları ve etiketleri de kapsar.
-- **Son Kullanılanlar**: En son açtığınız 10 bağlantı kenar çubuğunda listelenir; her satırda ne zaman bağlandığınız görünür. Geçmiş Ayarlar'dan temizlenebilir.
-- **Menü çubuğu**: Favorilere, son 5 bağlantıya ve gruplara menü çubuğundan tek tıkla bağlanın. Pencere kapatılınca Genius Remote menü çubuğunda çalışmaya devam eder; simge Ayarlar'dan gizlenebilir.
-- **Hızlı bağlan**: Hangi uygulamada olursanız olun **⌃⌥Space** ile bir arama kutusu açın, ad, host veya kullanıcı yazıp Return ile bağlanın. Kısayol Ayarlar'dan değiştirilebilir.
-- **Anlık RDP**: **Dosya › Anlık RDP…** (**⌥⌘N**) ya da menü çubuğundaki öğeyle bir pencere açın; adres, kullanıcı adı ve şifreyi yazıp Bağlan'a basın. Hiçbir şey kaydedilmez: bağlantı eklenmez, şifre Anahtar Zinciri'ne yazılmaz.
-- **Sunucu durumu**: Pencere açıkken her sunucunun portu dakikada bir denenir; satırda yeşil (ulaşılabilir) ya da kırmızı (ulaşılamıyor) bir nokta görünür, üzerine gelince nedeni yazar. Seri bağlantılarda nokta, aygıtın takılı olup olmadığını gösterir. Ayarlar'dan kapatılabilir.
-- **Spotlight ve Kestirmeler**: Bağlantının adını Spotlight'ta arayıp seçince bağlanır. Kestirmeler'de Genius Remote'un "Bağlan" eylemiyle her bağlantı için kestirme oluşturabilir, menü çubuğuna ekleyebilir ya da klavye kısayolu atayabilirsiniz.
-- **İçe aktarma**: `~/.ssh/config` içindeki Host girdilerini ya da `.rdp` dosyalarını (seçerek veya pencereye sürükleyip bırakarak) içe aktarın. Önce bir önizleme gösterilir; zaten var olan bağlantılar seçili gelmez.
-- **Yedekleme**: Bağlantılarınızı `.geniusremote` dosyasına dışa aktarın, başka bir Mac'e içe aktarın. Şifreler yalnızca parolayla şifrelenmiş yedeğe eklenir.
-- **Liquid Glass** arayüzü, Türkçe ve İngilizce dil desteği.
+- **SSH**: Connections open in Terminal or iTerm2, chosen in Settings. A saved password is entered for you; an SSH key file can be chosen per connection. "File Transfer" in a connection's menu opens the server in an app such as Cyberduck, Transmit or ForkLift, or with sftp in the terminal if none is installed. When sudo needs the password, "Copy Password" in a connection's menu (⇧⌘C) copies it, or Settings > SSH can copy it after every connection.
+- **RDP**: The default client is [FreeRDP](https://www.freerdp.com), which receives the password directly. [Microsoft Windows App](https://apps.apple.com/app/id1295203466) can be chosen in Settings instead. Display (window size or full screen, all screens), clipboard, shared folder and sound have defaults in Settings and can be changed per connection; resizing the window updates the resolution or, for older servers, scales the picture. A shared folder works with FreeRDP only. When FreeRDP can't connect, an alert says why (account locked, wrong password, server unreachable and so on). FreeRDP's shortcuts use left Control + Option + Shift (M minimizes, Enter toggles full screen, D disconnects), so typing a capital letter with right Shift doesn't trigger them. This is set in `~/.config/freerdp/sdl-freerdp.json`, which is created unless you already chose your own keys there.
+- **Serial (COM)**: Connect to switch, router or server consoles over a USB serial cable, as in PuTTY. Pick the device from the plugged-in `/dev/cu.*` devices or type its path. Speed (presets from 300 to 921600, or any value), data bits, parity, stop bits and flow control (RTS/CTS, XON/XOFF) are set per connection. The connection opens in your terminal app with Genius Remote's own serial console: **Ctrl-A Q** closes it, **Ctrl-A B** sends a break and **Ctrl-A Ctrl-A** sends Ctrl-A. Nothing else needs to be installed.
+- **Groups, favorites and order**: Sort connections into groups, mark the ones you use most, and search by name, host or user. Order the list by hand (drag and drop), by name or by last connection.
+- **Credential profiles**: Define a shared user name and password, such as a domain account, once in Settings > Credentials and use it for several connections. When the password changes, update it in one place. Passwords stay in the Keychain; backups include profile names and user names, not their passwords.
+- **Notes and tags**: Add notes and tags such as `prod` or `linux` to any connection. Tags are listed in the sidebar, and search covers notes and tags too.
+- **Recent**: The 10 connections you opened last are listed in the sidebar, and each row shows when you last connected. History can be cleared in Settings.
+- **Menu bar**: Connect to favorites, the last 5 connections and groups straight from the menu bar. Genius Remote keeps running there after you close its window; the icon can be hidden in Settings.
+- **Quick connect**: Press **⌃⌥Space** in any app to open a search box, type a name, host or user and press Return to connect. The shortcut can be changed in Settings.
+- **Instant RDP**: Open **File › Instant RDP…** (**⌥⌘N**) or the menu bar item, type an address, user name and password, and press Connect. Nothing is saved: no connection is added and the password never reaches the Keychain.
+- **Server status**: While the window is open, each server's port is tried every minute and its row shows a green (reachable) or red (unreachable) dot, with the reason on hover. For serial connections the dot shows whether the device is plugged in. Can be turned off in Settings.
+- **Spotlight and Shortcuts**: Search a connection's name in Spotlight and pick it to connect. In the Shortcuts app, Genius Remote's "Connect" action builds a shortcut for any connection that you can add to the menu bar or give a keyboard shortcut.
+- **Import**: Bring in Host entries from `~/.ssh/config` or `.rdp` files (pick them or drop them on the window). A preview comes first, and connections that already exist start unchecked.
+- **Backup**: Export your connections to a `.geniusremote` file and import them on another Mac. Passwords are only included in passphrase-encrypted backups.
+- **Liquid Glass** interface, in English and Turkish.
 
-![Bağlantı formu](docs/screenshots/tr/editor.png)
+![Connection editor](docs/screenshots/en/editor.png)
 
-![Seri bağlantı formu](docs/screenshots/tr/serial.png)
+![Serial connection form](docs/screenshots/en/serial.png)
 
-![Hızlı bağlan](docs/screenshots/tr/quick-connect.png)
+![Quick connect](docs/screenshots/en/quick-connect.png)
 
-![İçe aktarma](docs/screenshots/tr/import.png)
+![Import](docs/screenshots/en/import.png)
 
-## Güvenlik
+## Security
 
-- Şifreler yalnızca bu Mac'in **Anahtar Zinciri**'nde saklanır. Bulut senkronizasyonu yoktur; hiçbir veri cihazdan çıkmaz.
-- **SSH** şifresi `SSH_ASKPASS` ile iletilir. Şifre, yalnızca sizin okuyabildiğiniz tek kullanımlık bir dosyaya yazılır ve ilk okumada silinir. Komut satırında veya terminal geçmişinde görünmez.
-- **FreeRDP** şifreyi standart girdiden (`/args-from:stdin`) alır, bu yüzden işlem listesinde görünmez.
-- **Windows App** dışarıdan şifre kabul etmez. Şifre panoya kopyalanır ve 30 saniye sonra silinir.
-- **Şifreyi Kopyala** (sudo için) şifreyi panoya 90 saniyeliğine koyar. Panoya kopyalanan şifreler, pano yöneticilerinin geçmişe almaması için gizli olarak işaretlenir (`org.nspasteboard.ConcealedType`); bu sürede başka bir şey kopyaladıysanız ona dokunulmaz.
-- **Sunucu anahtarları**: SSH yeni sunucu anahtarlarını ilk bağlantıda kabul eder, değişmiş anahtarları reddeder (`StrictHostKeyChecking=accept-new`). FreeRDP sertifikalarda aynı mantığı izler (`/cert:tofu`).
+- Passwords are stored only in this Mac's **Keychain**. There is no cloud sync; nothing leaves the device.
+- **SSH** passwords are handed over through `SSH_ASKPASS`. The password is written to a one-time file that only you can read, and the file is deleted on first read. It never appears on the command line or in shell history.
+- **FreeRDP** reads the password from standard input (`/args-from:stdin`), so it doesn't show up in the process list.
+- **Windows App** doesn't accept a password from outside. The password is copied to the clipboard and cleared after 30 seconds.
+- **Copy Password** (for sudo) keeps the password on the clipboard for 90 seconds. Copied passwords are marked as concealed (`org.nspasteboard.ConcealedType`) so clipboard managers leave them out of their history; anything you copy in the meantime is left alone.
+- **Host keys**: SSH accepts new host keys on first connection and rejects changed ones (`StrictHostKeyChecking=accept-new`). FreeRDP follows the same rule for certificates (`/cert:tofu`).
 
-## Gereksinimler
+## Requirements
 
-- macOS 26 (Tahoe) veya üzeri
-- RDP için FreeRDP:
+- macOS 26 (Tahoe) or later
+- For RDP, FreeRDP:
   ```bash
   brew install freerdp
   ```
-  ya da Microsoft Windows App:
+  or Microsoft Windows App:
   ```bash
   brew install --cask windows-app
   ```
 
-## Kurulum
+## Installation
 
 ### Homebrew
 
@@ -61,25 +61,25 @@ macOS için sade bir SSH, RDP ve seri (COM) bağlantı yöneticisi. Bağlantıla
 brew install meteciftci/tap/geniusremote
 ```
 
-Güncellemek için `brew upgrade geniusremote`. Uygulama Apple tarafından onaylanmadığı için cask, kurulumdan sonra karantina işaretini kaldırır; bu sayede macOS açılışta engellemez. Bu tap'ten kurarak buna onay vermiş olursunuz.
+Update with `brew upgrade geniusremote`. Because the app isn't notarized by Apple, the cask removes the quarantine flag after installing, so macOS doesn't block it on launch. Installing from this tap is how you agree to that.
 
-`brew uninstall --zap geniusremote` uygulamayla birlikte bağlantıları, ayarları ve günlükleri de siler. Anahtar Zinciri'ndeki şifreler kalır; onları Anahtar Zinciri Erişimi'nde "Genius Remote" diye aratıp silebilirsiniz.
+`brew uninstall --zap geniusremote` also removes connections, settings and logs. Passwords stay in the Keychain; search for "Genius Remote" in Keychain Access to delete them.
 
-### Hazır sürüm
+### Prebuilt release
 
-1. [Releases](https://github.com/meteciftci/genius-remote/releases) sayfasından son `GeniusRemote-x.y.z.zip` dosyasını indirin, açın ve `GeniusRemote.app`'i **Uygulamalar** klasörüne taşıyın.
-2. Uygulama Apple tarafından onaylanmadığı (notarize edilmediği) için macOS ilk açılışta engeller. İki yoldan biriyle açabilirsiniz:
-   - Uygulamaya **sağ tıklayıp Aç**'ı seçin. Açılmazsa **Sistem Ayarları → Gizlilik ve Güvenlik** bölümünde **Yine de Aç**'a basın.
-   - Ya da Terminal'de karantina işaretini kaldırın:
+1. Download the latest `GeniusRemote-x.y.z.zip` from the [Releases](https://github.com/meteciftci/genius-remote/releases) page, unzip it, and move `GeniusRemote.app` to your **Applications** folder.
+2. The app isn't notarized by Apple, so macOS blocks it on first launch. Open it either way:
+   - **Right-click the app and choose Open**. If it still won't open, click **Open Anyway** in **System Settings → Privacy & Security**.
+   - Or remove the quarantine flag in Terminal:
      ```bash
      xattr -dr com.apple.quarantine /Applications/GeniusRemote.app
      ```
 
-Hazır sürüm yerel imzalıdır. Bu yüzden her güncellemeden sonra macOS, Anahtar Zinciri ve Erişilebilirlik izinlerini bir kez daha sorar.
+Prebuilt releases are ad-hoc signed, so macOS asks for Keychain and Accessibility access again after each update.
 
-### Kaynak koddan derleme
+### Building from source
 
-Xcode 26 veya üzeri ile [XcodeGen](https://github.com/yonaskolb/XcodeGen) gerekir.
+Requires Xcode 26 or later and [XcodeGen](https://github.com/yonaskolb/XcodeGen).
 
 ```bash
 brew install xcodegen
@@ -89,52 +89,52 @@ xcodegen generate
 open GeniusRemote.xcodeproj
 ```
 
-`GeniusRemote.xcodeproj`, `project.yml` dosyasından üretilir ve depoya eklenmez. Yeni bir dosya ekledikten sonra `xcodegen generate` komutunu tekrar çalıştırın.
+`GeniusRemote.xcodeproj` is generated from `project.yml` and isn't checked in. Run `xcodegen generate` again after adding files.
 
-Testleri komut satırından çalıştırmak için:
+Run the tests from the command line:
 
 ```bash
 xcodebuild -project GeniusRemote.xcodeproj -scheme GeniusRemote test
 ```
 
-#### Örnek veriler
+#### Sample data
 
-Debug derlemesi `-DemoData` argümanıyla açılırsa gerçek bağlantılar yerine yalnızca hafızada tutulan örnek bağlantılar gösterilir. README ekran görüntüleri bu şekilde alınmıştır; `-DemoEditor` ve `-DemoSettings` ilgili ekranı da açar; `-DemoSerial` eklenirse editör seri bağlantıyı gösterir.
+A Debug build launched with `-DemoData` shows in-memory sample connections instead of your real ones. The README screenshots were taken this way; `-DemoEditor` and `-DemoSettings` also open those screens; add `-DemoSerial` to show the serial connection in the editor.
 
 ```bash
 open build/Build/Products/Debug/GeniusRemote.app --args -DemoData
 ```
 
-#### İmza
+#### Signing
 
-Varsayılan olarak uygulama yerel imzayla ("Sign to Run Locally") derlenir; Apple hesabı gerekmez. Bu durumda macOS her derlemeden sonra Anahtar Zinciri ve Erişilebilirlik izinlerini yeniden sorar. İzinlerin kalıcı olması için Apple Development sertifikanızla imzalayın:
+By default the app is ad-hoc signed ("Sign to Run Locally"), so no Apple account is needed. macOS then asks for Keychain and Accessibility access again after every build. To keep those permissions, sign with your Apple Development certificate:
 
 ```bash
 cp Config/Local.xcconfig.example Config/Local.xcconfig
 ```
 
-Ardından `Config/Local.xcconfig` içindeki `DEVELOPMENT_TEAM` değerini kendi ekip ID'nizle değiştirin. Bu dosya git'e eklenmez.
+Then set `DEVELOPMENT_TEAM` in `Config/Local.xcconfig` to your team ID. That file isn't checked in.
 
-## Kullanım
+## Usage
 
-| Kısayol | İşlem |
+| Shortcut | Action |
 | --- | --- |
-| Çift tıklama veya Return | Seçili bağlantıya bağlan |
-| ⌃⌥Space | Hızlı bağlan (her uygulamadan) |
-| ⌘N | Yeni bağlantı |
-| ⇧⌘N | Yeni grup |
-| ⌘F | Ara |
-| ⇧⌘I / ⇧⌘E | İçe aktar / Dışa aktar |
-| ⌘, | Ayarlar |
+| Double-click or Return | Connect to the selected connection |
+| ⌃⌥Space | Quick connect (from any app) |
+| ⌘N | New connection |
+| ⇧⌘N | New group |
+| ⌘F | Search |
+| ⇧⌘I / ⇧⌘E | Import / Export |
+| ⌘, | Settings |
 
-![Ayarlar](docs/screenshots/tr/settings.png)
+![Settings](docs/screenshots/en/settings.png)
 
-## Bilinen kısıtlar
+## Known limitations
 
-- FreeRDP 3.x, açılışta ekranları ölçmek için kısa süreliğine tam ekran bir pencere açar. Bu yüzden bağlanırken ekran bir an siyaha döner.
-- FreeRDP'nin macOS sürümü pano üzerinden dosya kopyalayamaz; yalnızca metin ve resim kopyalanır. Dosya aktarmak için paylaşılan klasör kullanın: seçtiğiniz klasör Windows Gezgini'nde bir sürücü olarak görünür ve iki yönde kopyalama yapılabilir. Windows App ile pano üzerinden dosya kopyalama çalışır.
-- RDP oturumunu pencerenin çarpısıyla kapatmak oturumu kapatmaz, yalnızca bağlantıyı keser. Oturumu sonlandırmak için Windows'ta **Oturumu kapat**'ı kullanın.
+- FreeRDP on macOS can't copy files through the clipboard; only text and pictures are copied. To move files, use a shared folder: the folder you choose appears as a drive in Windows Explorer and files can be copied both ways. Copying files through the clipboard works with Windows App.
+- FreeRDP 3.x briefly opens a fullscreen window on each display at startup to measure it, so the screen flashes black for a moment when connecting.
+- Closing an RDP window with its close button disconnects the session but doesn't sign out. Use **Sign out** in Windows to end the session.
 
-## Lisans
+## License
 
 [MIT](LICENSE)

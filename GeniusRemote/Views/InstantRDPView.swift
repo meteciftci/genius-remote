@@ -62,6 +62,12 @@ struct InstantRDPView: View {
             session = InstantRDP()
             errorMessage = nil
             focusedField = .host
+            #if DEBUG
+            if DemoData.opensInstantRDP {
+                session.host = "fs-01.example.com"
+                session.username = "EXAMPLE\\admin"
+            }
+            #endif
         }
         .onDisappear { session = InstantRDP() }
     }

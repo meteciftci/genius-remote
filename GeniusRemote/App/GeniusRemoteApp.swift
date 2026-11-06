@@ -51,7 +51,7 @@ struct GeniusRemoteApp: App {
                 .frame(minWidth: 720, minHeight: 440)
                 .environment(launcher)
         }
-        .defaultSize(width: 960, height: 600)
+        .defaultSize(width: 1040, height: 600)
         // Open the window on every launch, even if it was closed when the app last quit.
         .defaultLaunchBehavior(.presented)
         .modelContainer(container)

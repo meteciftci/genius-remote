@@ -32,6 +32,8 @@ macOS için sade bir SSH, RDP ve seri (COM) bağlantı yöneticisi. Bağlantıla
 
 ![İçe aktarma](docs/screenshots/tr/import.png)
 
+![Anlık RDP](docs/screenshots/tr/instant-rdp.png)
+
 ## Güvenlik
 
 - Şifreler bu Mac'te uygulamanın kendi veritabanında şifreli (AES-GCM) saklanır; anahtar yalnızca sizin kullanıcınızın okuyabildiği bir dosyadır. Bu, veritabanı kopyalanırsa şifrelerin okunmasını engeller; sizin adınıza çalışan bir programı engellemez. Bulut senkronizasyonu yoktur; hiçbir veri cihazdan çıkmaz.

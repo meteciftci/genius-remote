@@ -79,6 +79,9 @@ struct ContentView: View {
             if DemoData.opensImport {
                 showPreview(title: String(localized: "Import from SSH Config"), candidates: SSHConfigParser.parse(DemoData.sshConfig), emptyMessage: "")
             }
+            if DemoData.opensInstantRDP {
+                openWindow(id: InstantRDPWindow.id)
+            }
             if DemoData.opensQuickConnect {
                 // Wait until the main window has taken focus, or the panel closes right away.
                 try? await Task.sleep(for: .seconds(1))

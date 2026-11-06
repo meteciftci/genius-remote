@@ -3,7 +3,7 @@ import Foundation
 import SwiftData
 
 /// Sample connections for screenshots. Launch a Debug build with `-DemoData` to use an
-/// in-memory store filled with these; `-DemoEditor`, `-DemoSettings` or `-DemoQuickConnect`
+/// in-memory store filled with these; `-DemoEditor`, `-DemoSettings`, `-DemoQuickConnect` or `-DemoInstantRDP`
 /// also opens that screen. `-DemoSerial` makes the editor show the serial connection.
 enum DemoData {
     static var isEnabled: Bool { arguments.contains("-DemoData") }
@@ -11,6 +11,7 @@ enum DemoData {
     static var opensSettings: Bool { arguments.contains("-DemoSettings") }
     static var opensQuickConnect: Bool { arguments.contains("-DemoQuickConnect") }
     static var opensImport: Bool { arguments.contains("-DemoImport") }
+    static var opensInstantRDP: Bool { arguments.contains("-DemoInstantRDP") }
 
     /// A small `~/.ssh/config` for the import preview screenshot.
     static let sshConfig = """

@@ -32,6 +32,8 @@ A simple SSH, RDP and serial (COM) connection manager for macOS. Save your conne
 
 ![Import](docs/screenshots/en/import.png)
 
+![Instant RDP](docs/screenshots/en/instant-rdp.png)
+
 ## Security
 
 - Passwords are stored encrypted (AES-GCM) in the app's own database on this Mac; the key is a file only your user can read. This stops a copied database from revealing them, but not a program running as you. There is no cloud sync; nothing leaves the device.
